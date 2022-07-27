@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="todos.component.css" />
+
+<ul *ngFor="let todo of todos">
+  <li>{{ todo.sno }} - {{ todo.title }} - {{ todo.desc }}</li>
+</ul>
+
+<div class="container text-center image">
+  <img [src]="url" height="200" /><br />
+  <input type="file" (change)="onSelectFile()" />
+</div>
+ 
